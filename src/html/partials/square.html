@@ -1,0 +1,27 @@
+<fieldset class="square">
+  <form class="square__form">
+    <legend class="square__form-legend">Cuadrado</legend>
+    <label for="inputSquare" class="square__form-label"
+      >Escribe cuantos cm mide cada lado del cuadrado</label
+    >
+    <input id="inputSquare" type="number" class="square__form-input" />
+    <button
+      type="button"
+      onclick="calculatePerimeterSquare()"
+      class="square__form-buttonPerimeter"
+    >
+      Calcular perímetro
+    </button>
+    <p class="square__form-textPerimeter">El perímetro del cuadrado es:</p>
+    <p class="square__form-answerPerimeter"></p>
+    <button
+      type="button"
+      onclick="calculateAreaSquare()"
+      class="square-form-buttonArea"
+    >
+      Calcular área
+    </button>
+    <p class="square__form-textArea">El área del cuadrado es:</p>
+    <p class="square__form-answerArea"></p>
+  </form>
+</fieldset>
