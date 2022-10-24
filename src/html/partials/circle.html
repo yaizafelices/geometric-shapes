@@ -1,0 +1,36 @@
+<fieldset class="circle">
+  <form class="circle__form">
+    <legend class="circle__form-legend">Círculo</legend>
+    <label for="inputCircle" class="circle__form-label"
+      >Escribe cuantos cm mide el radio del círculo</label
+    >
+    <input id="inputCircle" type="number" class="circle__form-input" />
+    <button
+      type="button"
+      onclick="calculateDiameterCircle()"
+      class="circle__form-button-diameter"
+    >
+      Calcular diámetro
+    </button>
+    <p class="circle__form-text-diameter">El diámtero del círculo es:</p>
+    <p class="circle__form-answer-diameter"></p>
+    <button
+      type="button"
+      onclick="calculatePerimeterCircle()"
+      class="circle__form-button-perimeter"
+    >
+      Calcular perímetro
+    </button>
+    <p class="circle__form-text-perimeter">El perímetro del círculo es:</p>
+    <p class="circle__form-answer-perimeter"></p>
+    <button
+      type="button"
+      onclick="calculateAreaCircle()"
+      class="circle-form-button-area"
+    >
+      Calcular área
+    </button>
+    <p class="circle__form-text-area">El área del círculo es:</p>
+    <p class="circle__form-answer-area"></p>
+  </form>
+</fieldset>

@@ -9,43 +9,51 @@ const squareArea = (squareSide) => {
   return squareSide * squareSide;
 };
 
+const inputSquare = document.getElementById('inputSquare');
+
 
 const calculatePerimeterSquare =() =>{
-  const input = document.getElementById('inputSquare');
-  const value = input.value;
-  const perimeter = squarePerimeter(value);
-  document.querySelector('.figures__square-form-answerPerimeter').innerHTML = (perimeter);
+  const valueSquare = inputSquare.value;
+  const perimeter = squarePerimeter(valueSquare);
+  document.querySelector('.square__form-answer-perimeter').innerHTML = (perimeter);
 };
+
 const calculateAreaSquare =() =>{
-  const input = document.getElementById('inputSquare');
-  const value = input.value;
-  const area = squareArea(value);
-  document.querySelector('.figures__square-form-answerArea').innerHTML = (area);
+  const valueSquare = inputSquare.value;
+  const area = squareArea(valueSquare);
+  document.querySelector('.square__form-answer-area').innerHTML = (area);
 };
 
 
 
 //Code of the triangle
 
-/*const trianglePerimeter = (triangleSide1, triangleSide2,triangleBase)=>{
+const trianglePerimeter = (triangleSide1, triangleSide2,triangleBase)=>{
   return triangleSide1 + triangleSide2 + triangleBase;
 };
 const triangleArea =(triangleBase, triangleHeight)=> {
   return (triangleBase * triangleHeight)/2;
 };
 
+const inputSide1 = document.getElementById('inputTriangleSide1');
+const inputSide2 = document.getElementById('inputTriangleSide2');
+const inputBase = document.getElementById('inputTriangleBase');
+const inputHeight = document.getElementById('inputTriangleHeight');
+
 
 const calculatePerimeterTriangle =() =>{
-  const input = document.getElementById('inputTriangle');
-  const value = input.value;
-  const perimeter = trianglePerimeter(value);
-  alert(perimeter);
+  const valueSide1 = parseInt(inputSide1.value);
+  const valueSide2 = parseInt(inputSide2.value);
+  const valueBase = parseInt(inputBase.value);
+  const perimeter = trianglePerimeter(valueSide1, valueSide2, valueBase);
+  document.querySelector('.triangle__form-answer-perimeter').innerHTML = (perimeter);
 };
+
 const calculateAreaTriangle =() =>{
-  const input = document.getElementById('inputTriangle');
-  const value = input.value;
-  const area = triangleArea(value);
-  alert(area);
+  const valueBase = parseInt(inputBase.value);
+  const valueHeight = parseInt(inputHeight.value);
+  const area = triangleArea(valueBase, valueHeight);
+  document.querySelector('.triangle__form-answer-area').innerHTML = (area);
 };
 
 
@@ -57,24 +65,29 @@ const PI = Math.PI;
 const circleDiameter = (circleRadius) =>{
   return circleRadius * 2;
 };
-const CirclePerimeter = (circleRadius) =>{
+const circlePerimeter = (circleRadius) =>{
   const diameter = circleDiameter(circleRadius);
   return diameter * PI;
 };
-const CircleArea =(circleRadius) =>{
+const circleArea =(circleRadius) =>{
   return (circleRadius * circleRadius) * PI;
 };
 
+const inputCircle = document.getElementById('inputCircle');
+
+const calculateDiameterCircle =() =>{
+  const value = inputCircle.value;
+  const diameter = circleDiameter(value);
+  document.querySelector('.circle__form-answer-diameter').innerHTML = (diameter);
+};
 
 const calculatePerimeterCircle =() =>{
-  const input = document.getElementById('inputCircle');
-  const value = input.value;
+  const value = inputCircle.value;
   const perimeter = circlePerimeter(value);
-  alert(perimeter);
+  document.querySelector('.circle__form-answer-perimeter').innerHTML = (perimeter);
 };
 const calculateAreaCircle =() =>{
-  const input = document.getElementById('inputCircle');
-  const value = input.value;
+  const value = inputCircle.value;
   const area = circleArea(value);
-  alert(area);
-};*/
+  document.querySelector('.circle__form-answer-area').innerHTML = (area);
+};
