@@ -33,21 +33,102 @@
             <button
               type="button"
               onclick="calculatePerimeterSquare()"
-              class="square__form-buttonPerimeter"
+              class="square__form-button-perimeter"
             >
               Calcular perímetro
             </button>
-            <p class="square__form-textPerimeter">El perímetro del cuadrado es:</p>
-            <p class="square__form-answerPerimeter"></p>
+            <p class="square__form-text-perimeter">El perímetro del cuadrado es:</p>
+            <p class="square__form-answer-perimeter"></p>
             <button
               type="button"
               onclick="calculateAreaSquare()"
-              class="square-form-buttonArea"
+              class="square-form-button-area"
             >
               Calcular área
             </button>
-            <p class="square__form-textArea">El área del cuadrado es:</p>
-            <p class="square__form-answerArea"></p>
+            <p class="square__form-text-area">El área del cuadrado es:</p>
+            <p class="square__form-answer-area"></p>
+          </form>
+        </fieldset>
+
+        <fieldset class="triangle">
+          <form class="triangle__form">
+            <legend class="triangle__form-legend">Triángulo</legend>
+            <label for="inputTriangleSide1" class="triangle__form-label"
+              >Escribe cuantos cm mide el lado izquierdo del triángulo</label
+            >
+            <input id="inputTriangleSide1" type="number" class="triangle__form-input" />
+            <label for="inputTriangleSide2" class="triangle__form-label"
+              >Escribe cuantos cm mide el lado derecho del triángulo</label
+            >
+            <input id="inputTriangleSide2" type="number" class="triangle__form-input" />
+            <label for="inputTriangleBase" class="triangle__form-label"
+              >Escribe cuantos cm mide la base del triángulo</label
+            >
+            <input id="inputTriangleBase" type="number" class="triangle__form-input" />
+            <label for="inputTriangleHeight" class="triangle__form-label"
+              >Escribe cuantos cm mide la altura del triángulo</label
+            >
+            <input
+              id="inputTriangleHeight"
+              type="number"
+              class="triangle__form-input"
+            />
+            <button
+              type="button"
+              onclick="calculatePerimeterTriangle()"
+              class="triangle__form-button-perimeter"
+            >
+              Calcular perímetro
+            </button>
+            <p class="triangle__form-text-perimeter">El perímetro del triangulo es:</p>
+            <p class="triangle__form-answer-perimeter"></p>
+            <button
+              type="button"
+              onclick="calculateAreaTriangle()"
+              class="triangle-form-button-area"
+            >
+              Calcular área
+            </button>
+            <p class="triangle__form-text-area">El área del triangulo es:</p>
+            <p class="triangle__form-answer-area"></p>
+          </form>
+        </fieldset>
+
+        <fieldset class="circle">
+          <form class="circle__form">
+            <legend class="circle__form-legend">Círculo</legend>
+            <label for="inputCircle" class="circle__form-label"
+              >Escribe cuantos cm mide el radio del círculo</label
+            >
+            <input id="inputCircle" type="number" class="circle__form-input" />
+            <button
+              type="button"
+              onclick="calculateDiameterCircle()"
+              class="circle__form-button-diameter"
+            >
+              Calcular diámetro
+            </button>
+            <p class="circle__form-text-diameter">El diámtero del círculo es:</p>
+            <p class="circle__form-answer-diameter"></p>
+            <button
+              type="button"
+              onclick="calculatePerimeterCircle()"
+              class="circle__form-button-perimeter"
+            >
+              Calcular perímetro
+            </button>
+            <p class="circle__form-text-perimeter">El perímetro del círculo es:</p>
+            <p class="circle__form-answer-perimeter"></p>
+            <button
+              type="button"
+              onclick="calculateAreaCircle()"
+              class="circle-form-button-area"
+            >
+              Calcular área
+            </button>
+            <p class="circle__form-text-area">El área del círculo es:</p>
+            <p class="circle__form-answer-area"></p>
           </form>
         </fieldset>
 

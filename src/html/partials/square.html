@@ -1,27 +1,41 @@
 <fieldset class="square">
+  <img
+    src="./assets/images/square.png"
+    alt="Imagen cuadrado"
+    title="Imagen cuadrado"
+    class="square__image"
+  />
   <form class="square__form">
     <legend class="square__form-legend">Cuadrado</legend>
-    <label for="inputSquare" class="square__form-label"
-      >Escribe cuantos cm mide cada lado del cuadrado</label
-    >
-    <input id="inputSquare" type="number" class="square__form-input" />
-    <button
-      type="button"
-      onclick="calculatePerimeterSquare()"
-      class="square__form-button-perimeter"
-    >
-      Calcular perímetro
-    </button>
-    <p class="square__form-text-perimeter">El perímetro del cuadrado es:</p>
-    <p class="square__form-answer-perimeter"></p>
-    <button
-      type="button"
-      onclick="calculateAreaSquare()"
-      class="square-form-button-area"
-    >
-      Calcular área
-    </button>
-    <p class="square__form-text-area">El área del cuadrado es:</p>
-    <p class="square__form-answer-area"></p>
+    <div class="square__form-container">
+      <label for="inputSquare" class="square__form-container-label"
+        >Escribe cuantos cm mide cada lado del cuadrado</label
+      >
+      <input
+        id="inputSquare"
+        type="number"
+        class="square__form-container-input"
+      />
+      <button
+        type="button"
+        onclick="calculatePerimeterSquare()"
+        class="square__form-container-button-perimeter"
+      >
+        Calcular perímetro
+      </button>
+      <p class="square__form-container-text-perimeter">
+        El perímetro del cuadrado es:
+      </p>
+      <p class="square__form-container-answer-perimeter"></p>
+      <button
+        type="button"
+        onclick="calculateAreaSquare()"
+        class="square__form-container-button-area"
+      >
+        Calcular área
+      </button>
+      <p class="square__form-container-text-area">El área del cuadrado es:</p>
+      <p class="square__form-container-answer-area"></p>
+    </div>
   </form>
 </fieldset>

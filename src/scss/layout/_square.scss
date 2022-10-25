@@ -1,0 +1,88 @@
+.square{
+    justify-content: center;
+    text-align: center;
+    border: none;
+    margin: 20px;
+    @media all and (min-width: 768px) {
+        display: flex;
+    }
+
+    &__image{
+        width: 350px;
+        @media all and (min-width: 768px) {
+            width: 500px;
+        }
+    }
+
+    &__form{
+        margin: 15px;
+        @media all and (min-width: 768px) {
+            margin: 35px;
+        }
+        
+        &-legend{
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+
+        &-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &-label{
+                margin: 10px;
+            }
+    
+            &-input{
+                background-color: antiquewhite;
+                margin: 5px;
+                padding: 5px;
+                width: 100px;
+                font-size: 16px;
+                text-align: end;
+                @media all and (min-width: 768px) {
+                    font-size: 18px;
+                    width: 150px;
+                }
+            }
+
+            &-button-perimeter, &-button-area{
+                font-size: 16px;
+                padding: 7px;
+                margin: 10px;
+                width: 150px;
+                border-radius: 15px;
+                @media all and (min-width: 768px) {
+                    font-size: 18px;
+                    margin: 20px;
+                    padding: 10px;
+                    width: 250px;
+                }
+            }
+
+            &-button-perimeter{
+                background-color: rgb(153, 37, 37);
+                color: azure;
+            }
+
+            &-text-perimeter, &-answer-perimeter{
+                color: rgb(153,37,37)
+            }
+
+            &-answer-perimeter, &-answer-area{
+                font-size: 20px;
+            }
+
+            &-button-area{
+                background-color: rgb(7, 100, 22);
+                color: azure;
+            }
+
+            &-text-area, &-answer-area{
+                color: rgb(7, 100, 22)
+            }
+        }
+    }
+}

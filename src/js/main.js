@@ -15,13 +15,13 @@ const inputSquare = document.getElementById('inputSquare');
 const calculatePerimeterSquare =() =>{
   const valueSquare = inputSquare.value;
   const perimeter = squarePerimeter(valueSquare);
-  document.querySelector('.square__form-answer-perimeter').innerHTML = (perimeter);
+  document.querySelector('.square__form-container-answer-perimeter').innerHTML = (perimeter);
 };
 
 const calculateAreaSquare =() =>{
   const valueSquare = inputSquare.value;
   const area = squareArea(valueSquare);
-  document.querySelector('.square__form-answer-area').innerHTML = (area);
+  document.querySelector('.square__form-container-answer-area').innerHTML = (area);
 };
 
 
@@ -46,14 +46,14 @@ const calculatePerimeterTriangle =() =>{
   const valueSide2 = parseInt(inputSide2.value);
   const valueBase = parseInt(inputBase.value);
   const perimeter = trianglePerimeter(valueSide1, valueSide2, valueBase);
-  document.querySelector('.triangle__form-answer-perimeter').innerHTML = (perimeter);
+  document.querySelector('.triangle__form-container-answer-perimeter').innerHTML = (perimeter);
 };
 
 const calculateAreaTriangle =() =>{
   const valueBase = parseInt(inputBase.value);
   const valueHeight = parseInt(inputHeight.value);
   const area = triangleArea(valueBase, valueHeight);
-  document.querySelector('.triangle__form-answer-area').innerHTML = (area);
+  document.querySelector('.triangle__form-container-answer-area').innerHTML = (area);
 };
 
 
@@ -78,16 +78,16 @@ const inputCircle = document.getElementById('inputCircle');
 const calculateDiameterCircle =() =>{
   const value = inputCircle.value;
   const diameter = circleDiameter(value);
-  document.querySelector('.circle__form-answer-diameter').innerHTML = (diameter);
+  document.querySelector('.circle__form-container-answer-diameter').innerHTML = (diameter);
 };
 
 const calculatePerimeterCircle =() =>{
   const value = inputCircle.value;
   const perimeter = circlePerimeter(value);
-  document.querySelector('.circle__form-answer-perimeter').innerHTML = (perimeter);
+  document.querySelector('.circle__form-container-answer-perimeter').innerHTML = (perimeter);
 };
 const calculateAreaCircle =() =>{
   const value = inputCircle.value;
   const area = circleArea(value);
-  document.querySelector('.circle__form-answer-area').innerHTML = (area);
+  document.querySelector('.circle__form-container-answer-area').innerHTML = (area);
 };
